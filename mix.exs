@@ -19,7 +19,7 @@ defmodule ExTvMovieScraper.Mixfile do
   def application do
     [mod: {ExTvMovieScraper, []},
      applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex]]
+                    :phoenix_ecto, :postgrex, :exq]]
   end
 
   # Specifies which paths to compile per environment.
@@ -40,7 +40,10 @@ defmodule ExTvMovieScraper.Mixfile do
      {:cowboy, "~> 1.0"},
      {:httpoison, "~> 0.9.0"},
      {:sweet_xml, "~> 0.6.1"},
-     {:json, "~> 0.3.0"}]
+     {:json, "~> 0.3.0"},
+     {:exq, "~> 0.7.2"},
+     {:exq_ui, "~> 0.7.0"},
+     {:timex, "~> 2.0"}]
   end
 
   # Aliases are shortcuts or tasks specific to the current project.
