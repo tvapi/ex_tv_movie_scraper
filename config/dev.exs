@@ -41,3 +41,5 @@ config :ex_tv_movie_scraper, ExTvMovieScraper.Repo,
   database: "ex_tv_movie_scraper_dev",
   hostname: "localhost",
   pool_size: 10
+
+import_config "dev.secret.exs"
